@@ -26,8 +26,6 @@ function askQuestions() {
   }
 }
 
-// Write Passwoard
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -37,12 +35,35 @@ function writePassword() {
 
 };
 
+// Random Function
+
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
   symbol: getRandomSymbol,
   number: getRandomNumber
 };
+
+// Generate Passwword
+
+function generatePassword(lower, upper, symbol, number,  length) {
+  var validCharacters = ""
+  if(lower) {
+    validCharacters += getRandomLower()
+  }
+  if(upper) {
+    validCharacters += getRandomUpper()
+  }
+  if(symbol) {
+    validCharacters += getRandomSymbol()
+  }
+  if(number) {
+    validCharacters += getRandomNumber()
+  }
+
+  console.log(validCharacters)
+  let generatedPassword = '';
+}
 
 
 // Add event listener to generate button
