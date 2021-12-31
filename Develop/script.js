@@ -24,7 +24,7 @@ function askQuestions() {
     cnumbers = confirm("would you like to use numbers?");
 
   }
-}
+};
 
 // Write password to the #password input
 function writePassword() {
@@ -63,8 +63,19 @@ function generatePassword(lower, upper, symbol, number,  length) {
 
   console.log(validCharacters)
   let generatedPassword = '';
+
+// Creating loop
+
+for (let i = 0; i < length; i ++) {
+
+  var randomIndex = Math.floor(Math.random() * validCharacters.length)
+  var randomCharacter = validCharacters[randomIndex];
+  generatedPassword += randomCharacter
 }
 
+return generatedPassword;
+
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
