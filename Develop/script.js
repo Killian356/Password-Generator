@@ -1,5 +1,7 @@
 // Get references to the #generate element
 
+// Password Chararistics
+
 var generateBtn = document.querySelector("#generate");
 var passlength, cuppercase, clowercase, csymbols, cnumbers;
 function askQuestions() {
@@ -24,7 +26,7 @@ function askQuestions() {
   }
 }
 
-// Generate Passwoard
+// Write Passwoard
 
 // Write password to the #password input
 function writePassword() {
@@ -33,7 +35,15 @@ function writePassword() {
 
   passwordText.value = password;
 
-}
+};
+
+const randomFunc = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  symbol: getRandomSymbol,
+  number: getRandomNumber
+};
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
