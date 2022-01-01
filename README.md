@@ -5,7 +5,7 @@ To generate an 8-128 character passwords for various security purposes.
 
 ## Password Generator
 ![Screenshot](assets/images/PW1.JPG "Password-Generator")
-![Screenshot](assets\images\PW2.JPG "Password-Generator")
+![Screenshot](assets/images/PW2.JPG "Password-Generator")
 
 ## Built With
 * HTML
